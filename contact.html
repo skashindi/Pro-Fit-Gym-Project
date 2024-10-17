@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title> Contact Us - Pro-Fit</title>
+	   <meta charset="UTF-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <link rel="stylesheet" href="css/stylesMobile.css" media=" screen and (max-width: 480px)">
+	   <link rel="stylesheet" href="css/stylesDesktop.css" media="screen and (min-width: 480px)">
+	</head>
+   <body>
+       <header>
+	       <div class="logo">
+				 <img src="images/mwaju.png" alt="logo of Pro-Fit" class="small-logo">
+		   </div>
+		   <div class="nav-toggle">
+					<div class="menu-bar"></div>
+					<div class="menu-bar"></div>
+					<div class="menu-bar"></div>
+           </div>
+		  <div class="nav-links">
+			   <ul class="flex">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="about.html">About Us</a></li>
+				  <li><a href="class.html">Classes</a></li>
+				  <li><a href="Trainers.html">Trainers</a></li>
+				  <li><a href="pricing.html">Pricing</a></li>
+				  <li><a href="contact.html">Contact Us</a></li>
+				  <li><a href="Login.html">Login</a></li>
+			   </ul>  
+		  </div>
+	  </header>
+	  <main>
+        <h1>Contact Us</h1>
+		<p>Pro-Fit welcomes your inquiries and feedback. Our Contact Us form is designed to make reaching out to us easy and convenient.
+		   Whether you have questions about our fitness classes, want to know more about our experienced trainers, or have specific inquiries 
+		  about pricing and schedules, we're here to assist you. 
+		    Simply fill out the form with your name, contact details, and any relevant information, and we'll get back to you as soon as possible.  </p>
+		<form>		   
+			   <div class="section">				  				  
+				  <label for="name">Name:</label>
+				  <input type="text" id ="name" name="name" required><br><br>
+				  
+				  <label for="dob">Date of Birth:</label>
+				  <input type="date" id="dob" name="dob"><br><br>
+				  
+				  <label for="telephone">Telephone:</label>
+				  <input type="tel" id="telephone" name="telephone" required><br><br>
+				  
+				  <label for="email">Email:</label>
+				  <input type="email" id="email" name="email" required><br><br>
+			  </div>
+			  <div class="section">
+				<label>How did you hear about Us?</label><br>
+				<input type="radio" id="heardOnline" name="howDidYouHear" value="Online">
+				<label for="heardOnline">Online</label><br>
+				<input type="radio" id="heardFriend" name="howDidYouHear" value="Friend">
+				<label for="heardFriend">Friend</label><br>
+				<input type="radio" id="heardOther" name="howDidYouHear" value="Other">
+				<label for="heardOther">Other</label><br><br>  			
+			  </div>
+			  <div class="section">
+				<label>When are you available?</label><br>
+				<input type="checkbox" id="monday" name="availability" value="Monday">
+				<label for="monday">Monday</label><br>
+				<input type="checkbox" id="wednesday" name="availability" value="Wednesday">
+				<label for="wednesday">Wednesday</label><br>
+				<input type="checkbox" id="friday" name="availability" value="Friday">
+				<label for="friday">Friday</label><br>
+			  </div>
+			  <div class="section">
+				 <label for="goals">What are your fitness goals?</label><br>
+				 <textarea id="goals" name="goals" rows="4" cols="50"></textarea><br><br>
+				 		
+				 <button type="submit">Submit</button>
+			  </div>
+		</form>
+	  </main>  	  
+	  <footer>
+	     <p>&copy; 2023 Pro-Fit</p>
+	  </footer>
+	  <script>
+			document.addEventListener('DOMContentLoaded', function() {
+			const navToggle = document.querySelector('.nav-toggle');
+			const navLinks = document.querySelector('.nav-links ul');
+
+			navToggle.addEventListener('click', function() {
+				// Toggle the visibility of the navigation links
+				if (navLinks.style.display === 'block') {
+					navLinks.style.display = 'none';
+				} else {
+					navLinks.style.display = 'block';
+				}
+			});
+		});
+	  </script>
+   </body>
+</html>

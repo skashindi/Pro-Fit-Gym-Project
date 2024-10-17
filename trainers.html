@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Our Trainers - Pro-Fit</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/stylesMobile.css" media="screen and (max-width: 480px)">
+		<link rel="stylesheet" href="css/stylesDesktop.css" media="screen and (min-width: 480px)">
+			<style>
+				 h1 {
+					text-align: center;
+                    margin-bottom: 20px;
+					margin-left: 50px; 
+				}
+
+				.trainer {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					padding: 20px;
+					border: 1px solid #ddd;
+					border-radius: 8px;
+					margin-bottom: 20px;
+					background-color: #f9f9f9;
+				}
+
+				.trainer img {
+					width: 300px; 
+					border-radius: 50%;
+					margin-bottom: 10px;
+				}
+
+				.trainer h2 {
+					margin-bottom: 5px;
+				}
+
+				.trainer p {
+					color: #555;
+					margin-bottom: 10px;
+				}
+
+				.trainer .price {
+					font-weight: bold;
+					color: #27ae60; 
+					margin-bottom: 10px;
+				}
+
+				.trainer button {
+					padding: 10px 20px;
+					background-color: #3498db; 
+					color: #fff; 
+					border: none;
+					border-radius: 5px;
+					cursor: pointer;
+				}
+		   </style>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="images/mwaju.png" alt="logo of Pro-Fit" class="small-logo">
+			</div>
+            <div class="nav-toggle">
+					<div class="menu-bar"></div>
+					<div class="menu-bar"></div>
+					<div class="menu-bar"></div>
+           </div>
+			<div class="nav-links">
+				<ul class="flex">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="class.html">Classes</a></li>
+					<li><a href="Trainers.html">Trainers</a></li>
+					<li><a href="pricing.html">Pricing</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="Login.html">Login</a></li>
+				</ul>
+			</div>
+		</header>
+			<div class="main-content">
+				<h1>Meet Our Trainers</h1>
+				<div class="row">
+					<div class="column">
+						<div class="trainer">
+							<img src="images/wiso.jpg" alt="Trainer 1">
+							<h2>John Doe</h2>
+							<p>Certified Personal Trainer</p>
+							<p>With over 10 years of experience, John is dedicated to helping you achieve your fitness goals through personalized training programs.</p>
+							<p class="price">$190 per session</p>
+                            <button>Select</button>
+						</div>
+					</div>
+					<div class="column">
+						<div class="trainer">
+							<img src="images/life.jpg" alt="Trainer 2">
+							<h2>Jane Smith</h2>
+							<p>Fitness Instructor</p>
+							<p>Jane brings energy and enthusiasm to every class. Her dynamic workouts are designed to make fitness enjoyable for everyone.</p>
+							<p class="price">$120 per session</p>
+                            <button>Select</button>
+						</div>
+					</div>
+					<div class="column">
+						<div class="trainer">
+							<img src="images/kelly.jpg" alt="Trainer 3">
+							<h2>Mike Johnson</h2>
+							<p>Certified Yoga Instructor</p>
+							<p>Mike specializes in yoga and mindfulness. Join his classes for a balance of physical and mental well-being.</p>
+							<p class="price">$110 per session</p>
+                            <button>Select</button>
+						</div>
+					</div>
+					<div class="column">
+						<div class="trainer">
+							<img src="images/kenny.jpg" alt="Trainer 4">
+							<h2>Sarah Anderson</h2>
+							<p>Strength and Conditioning Coach</p>
+							<p>Sarah focuses on strength training and conditioning. Join her sessions for a challenging and rewarding workout.</p>
+							<p class="price">$140 per session</p>
+                            <button>Select</button>
+						</div>
+					</div>
+					<div class="column">
+						<div class="trainer">
+							<img src="images/son.jpg" alt="Trainer 5">
+							<h2>Chris Miller</h2>
+							<p>Nutrition Specialist</p>
+							<p>Chris is passionate about nutrition and helps clients achieve their fitness goals through personalized diet plans.</p>
+							<p class="price">$100 per session</p>
+                            <button>Select</button>
+						</div>
+					</div>
+				   <div class="column">
+                     <div class="trainer">
+                        <img src="images/desk.jpg" alt="Trainer 6">
+                        <h2>Amy White</h2>
+                        <p>Certified Pilates Instructor</p>
+                        <p>Amy specializes in Pilates and focuses on core strength and flexibility. Join her classes for a unique and effective workout.</p>
+						<p class="price">$180 per session</p>
+                        <button>Select</button>
+                     </div>
+                  </div>
+				</div>
+			</div>
+		<footer>
+			<p>&copy; 2023 Pro-Fit</p>
+		</footer>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			const navToggle = document.querySelector('.nav-toggle');
+			const navLinks = document.querySelector('.nav-links ul');
+
+			navToggle.addEventListener('click', function() {
+				// Toggle the visibility of the navigation links
+				if (navLinks.style.display === 'block') {
+					navLinks.style.display = 'none';
+				} else {
+					navLinks.style.display = 'block';
+				}
+			});
+		});
+	  </script>
+	</body>
+</html>

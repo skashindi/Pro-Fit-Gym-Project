@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	   <title>Pro-Fit</title>
+	   <meta charset="UTF-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <link rel="stylesheet" href="css/stylesMobile.css" media=" screen and (max-width: 480px)">
+	   <link rel="stylesheet" href="css/stylesDesktop.css" media="screen and (min-width: 480px)">
+	   
+	   <style>
+			.btn {
+				display: inline-block;
+				padding: 10px 20px;
+				text-decoration: none;
+				background-color: pink;
+				color: black;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			
+       </style>
+	   
+	</head>
+	<body>
+	  <header>
+		   <div class="logo">
+				 <img src="images/mwaju.png" alt="logo of Pro-Fit" class="small-logo">
+		   </div>
+		   
+		   <div class="nav-toggle">
+					<div class="menu-bar"></div>
+					<div class="menu-bar"></div>
+					<div class="menu-bar"></div>
+           </div>
+		  <div class="nav-links">
+			   <ul class="flex">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="about.html">About Us</a></li>
+				  <li><a href="class.html">Classes</a></li>
+				  <li><a href="Trainers.html">Trainers</a></li>
+				  <li><a href="pricing.html">Pricing</a></li>
+				  <li><a href="contact.html">Contact Us</a></li>
+				  <li><a href="Login.html">Login</a></li>
+			   </ul>  
+		  </div>
+	  </header>
+	  
+	   
+		<div class="banner">
+			<div class="txt-content">
+				<h1>Get Your Perfect Workout <br>
+					With The Perfect <span>Trainer</span></h1>
+				<div class="join-form">
+					 <a href="Join.html" class="btn">Join Now</a>
+					<div class="subscribe flx">
+						<input type="email" placeholder="Enter your Email">
+						<button id="subscribeButton">Subscribe</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	  
+	   <img src="images/gym.jpg" alt="gym workout" class="bg">
+	   
+	   <div class="progess flx">
+	      <div class="item1">
+		     <h2>20</h2>
+			 <h5>Years <br> Experience</h5>
+		  </div>
+		  <div class="item1">
+		     <h2>10k</h2>
+			 <h5>Happy <br> Customers</h5>
+		  </div>
+	   </div>
+	   <footer>
+	     <p>&copy; 2023 Pro-Fit</p>
+	   </footer>
+	   <script>
+		  document.addEventListener('DOMContentLoaded', function() {
+
+			var subscribeButton = document.getElementById('subscribeButton');
+
+			subscribeButton.addEventListener('click', function() {
+			  
+			  var emailInput = document.querySelector('input[type="email"]');
+
+			  var enteredEmail = emailInput.value;
+			  alert('Subscribed with email: ' + enteredEmail);
+			  emailInput.value = '';
+			});
+		  });
+      </script>
+	  
+	  <script>
+			document.addEventListener('DOMContentLoaded', function() {
+			const navToggle = document.querySelector('.nav-toggle');
+			const navLinks = document.querySelector('.nav-links ul');
+
+			navToggle.addEventListener('click', function() {
+				// Toggle the visibility of the navigation links
+				if (navLinks.style.display === 'block') {
+					navLinks.style.display = 'none';
+				} else {
+					navLinks.style.display = 'block';
+				}
+			});
+		});
+	  </script>
+	  
+	</body>
+</html>   

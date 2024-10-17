@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>classes</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/stylesMobile.css" media="screen and (max-width: 480px)">
+      <link rel="stylesheet" href="css/stylesDesktop.css" media="screen and (min-width: 480px)">
+	  <style>
+          body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+         }
+
+         .video-section {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+         }
+
+         video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+
+         .content {
+            position: relative;
+            z-index: 1;
+            padding: 80px 20px 20px; 
+            text-align: center;
+            color: white;
+         }
+
+         .fitness-table {
+            color: white;
+         }
+
+         header {
+            position: fixed;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 2; 
+         }
+
+         header .logo, header .nav-links {
+            padding: 15px;
+         }
+
+         header .nav-links ul {
+            margin: 0;
+            padding: 0;
+         }
+
+         header .nav-links li {
+            display: inline;
+            margin-right: 15px;
+         }
+
+         header a {
+            text-decoration: none;
+            color: white;
+         }
+		 
+		 p{
+		 color:orange;
+		 }
+	  </style>
+   </head>
+   <body>
+     <header>
+	       <div class="logo">
+				 <img src="images/mwaju.png" alt="logo of Pro-Fit" class="small-logo">
+		   </div>
+		   <div class="nav-toggle">
+					<div class="menu-bar"></div>
+					<div class="menu-bar"></div>
+					<div class="menu-bar"></div>
+           </div>
+		  <div class="nav-links">
+			   <ul class="flex">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="about.html">About Us</a></li>
+				  <li><a href="class.html">Classes</a></li>
+				  <li><a href="Trainers.html">Trainers</a></li>
+				  <li><a href="pricing.html">Pricing</a></li>
+				  <li><a href="contact.html">Contact Us</a></li>
+				  <li><a href="Login.html">Login</a></li>
+			   </ul>  
+		  </div>
+	 </header>
+	 <div class="video-section">
+			   <video controls autoplay muted loop>
+			      <source src="movies/safa.mp4" type="video/mp4">
+			   </video>
+     </div>
+	 <div class="content">
+		<p>Classes that fit your lifestyles!</p>
+	    <table class="fitness-table">
+	    <thead>
+            <tr>
+               <th colspan="7" class="centered">All of our classes are free if you have Ultimate Plan!</th>
+            </tr>
+            <tr>
+               <th>Monday</th>
+               <th>Tuesday</th>
+               <th>Wednesday</th>
+               <th>Thursday</th>
+               <th>Friday</th>
+               <th>Saturday</th>
+               <th>Sunday</th>
+            </tr>
+          </thead>
+          <tbody>
+		    <tr>
+				<td>Cardio Blast 8am</td>
+				<td>Strength Training 8am</td>
+				<td>Yoga Flow 8am</td>
+				<td>HIIT 8am</td>
+				<td>Pilates Core 8am</td>
+				<td>Spin Cycling 8am</td>
+				<td>Zumba Dance 8am</td>
+            </tr>
+       
+			<tr>
+               <td>Yoga Flow 10am</td>
+               <td>Spin Cycling 10am</td>
+               <td>Zumba Dance 10am</td>
+               <td>Pilates Core 10am</td>
+               <td>Strength Training 10am</td>
+               <td>Cardio Blast 10am</td>
+               <td>HIIT 10am</td>
+            </tr>
+			
+			<tr>
+               <td>Pilates Core 2pm</td>
+               <td>Yoga Flow 2pm</td>
+               <td>Spin Cycling 2pm</td>
+               <td>Strength Training 2pm</td>
+               <td>HIIT 2pm</td>
+               <td>Zumba Dance 2pm</td>
+               <td>Cardio Blast 2pm</td>
+            </tr>
+			
+			<tr>
+               <td>Spin Cycling 4pm</td>
+               <td>Pilates Core 4pm</td>
+               <td>Strength Training 4pm</td>
+               <td>Cardio Blast 4pm</td>
+               <td>Zumba Dance 4pm</td>
+               <td>HIIT 4pm</td>
+               <td>Strength Training 4pm</td>
+            </tr>
+			
+			<tr>
+               <td>HIIT 6pm</td>
+               <td>Zumba Dance 6pm</td>
+               <td>Cardio Blast 6pm</td>
+               <td>Yoga Flow 6pm</td>
+               <td>Spin Cycling 6pm</td>
+               <td>Strength Training 6pm</td>
+               <td>Pilates Core 6pm</td>
+            </tr>
+			
+			<tr>
+               <td>Strength Training 8pm</td>
+               <td>HIIT 8pm</td>
+               <td>Pilates Core 8pm</td>
+               <td>Zumba Dance 8pm</td>
+               <td>Cardio Blast 8pm</td>
+               <td>Yoga Flow 8pm</td>
+               <td>Spin Cycling 8pm</td>
+            </tr>
+			
+			<tr>
+               <td>Zumba Dance 10pm</td>
+               <td>Cardio Blast 10pm</td>
+               <td>HIIT 10pm</td>
+               <td>Spin Cycling 10pm</td>
+               <td>Yoga Flow 10pm</td>
+               <td>Pilates Core 10pm</td>
+               <td>Yoga Flow 10pm</td>
+            </tr>
+              </tbody>
+	       </table>			   
+	  </div>
+	 
+	  <footer>
+	     <p>&copy; 2023 Pro-Fit</p>
+	  </footer>
+	  <script>
+			document.addEventListener('DOMContentLoaded', function() {
+			const navToggle = document.querySelector('.nav-toggle');
+			const navLinks = document.querySelector('.nav-links ul');
+
+			navToggle.addEventListener('click', function() {
+				// Toggle the visibility of the navigation links
+				if (navLinks.style.display === 'block') {
+					navLinks.style.display = 'none';
+				} else {
+					navLinks.style.display = 'block';
+				}
+			});
+		});
+	  </script>
+   </body>
+</html>

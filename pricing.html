@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Our Pricing - Pro-Fit</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/stylesMobile.css" media="screen and (max-width: 480px)">
+		<link rel="stylesheet" href="css/stylesDesktop.css" media="screen and (min-width: 480px)">
+		<style>
+			h1 {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			.pricing-plan {
+				text-align: center;
+				padding: 20px;
+				border: 1px solid #ddd;
+				border-radius: 8px;
+				margin-bottom: 20px;
+				background-color: #f9f9f9;
+			}
+
+			.pricing-plan h2 {
+				margin-bottom: 10px;
+				color: #27ae60; /* Set the color for the plan title */
+			}
+
+			.pricing-plan p {
+				color: #555;
+				margin-bottom: 10px;
+			}
+
+			.pricing-plan .price {
+				font-weight: bold;
+				color: #e74c3c; /* Set the color for the price */
+				font-size: 24px; /* Set the font size for the price */
+				margin-bottom: 20px;
+			}
+
+			.pricing-plan button {
+				padding: 10px 20px;
+				background-color: #3498db; /* Set the background color for the button */
+				color: #fff; /* Set the text color for the button */
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+		   <div class="logo">
+				 <img src="images/mwaju.png" alt="logo of Pro-Fit" class="small-logo">
+		   </div>
+		   <div class="nav-toggle">
+					<div class="menu-bar"></div>
+					<div class="menu-bar"></div>
+					<div class="menu-bar"></div>
+           </div>
+		  <div class="nav-links">
+			   <ul class="flex">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="about.html">About Us</a></li>
+				  <li><a href="class.html">Classes</a></li>
+				  <li><a href="Trainers.html">Trainers</a></li>
+				  <li><a href="pricing.html">Pricing</a></li>
+				  <li><a href="contact.html">Contact Us</a></li>
+				  <li><a href="Login.html">Login</a></li>
+			   </ul>  
+		  </div>
+		</header>
+		<div class="main-content">
+			<h1>Our Pricing Plans</h1>
+			<div class="row">
+				<div class="column">
+					<div class="pricing-plan">
+						<h2>Basic Plan</h2>
+						<p>Access to basic gym facilities</p>
+						<p class="price">$30 per month</p>
+						<button>Select Plan</button>
+					</div>
+				</div>
+				<div class="column">
+					<div class="pricing-plan">
+						<h2>Premium Plan</h2>
+						<p>Access to all facilities + 5 classes/month</p>
+						<p class="price">$50 per month</p>
+						<button>Select Plan</button>
+					</div>
+				</div>
+				<div class="column">
+					<div class="pricing-plan">
+						<h2>Ultimate Plan</h2>
+						<p>Unlimited access to all facilities + unlimited classes</p>
+						<p class="price">$80 per month</p>
+						<button>Select Plan</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p>&copy; 2023 Pro-Fit</p>
+		</footer>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			const navToggle = document.querySelector('.nav-toggle');
+			const navLinks = document.querySelector('.nav-links ul');
+
+			navToggle.addEventListener('click', function() {
+				// Toggle the visibility of the navigation links
+				if (navLinks.style.display === 'block') {
+					navLinks.style.display = 'none';
+				} else {
+					navLinks.style.display = 'block';
+				}
+			});
+		});
+	  </script>
+	</body>
+</html>
